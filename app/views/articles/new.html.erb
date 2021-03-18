@@ -1,0 +1,16 @@
+<h1>Create article</h1>
+<%= form_with url: create_article_path do |f| %>
+
+    <p> 
+        <%= f.label :author%> <br/>
+        <%= f.text_field :author %>
+    </p>
+    <p> 
+        <%= f.label :content %> <br/>
+        <%= f.text_field :content %>
+    </p>
+    <p> 
+        <%= f.submit %>
+    </p>
+
+<% end%>
