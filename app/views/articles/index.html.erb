@@ -14,6 +14,8 @@
                 <td><%= articles.id %></td>
                 <td><%= articles.author %></td>
                 <td><%= articles.content %></td>
+                <td><%= link_to "Edit", edit_article_path(articles.id) %></td>
+                <td><%= link_to "Delete", destroy_article_path(articles.id) %></td>
             </tr>
         <% end %>
     </tbody>
