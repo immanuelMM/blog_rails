@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   def index
     @articles = Article.all
+    @articles.order(event_at: :desc)
   end
 
   def new
